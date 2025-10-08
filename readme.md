@@ -1,6 +1,6 @@
 ## My Second Brain
 
-### readme
-### sfwef
+By Stanley 2025-09-01
+
 
  

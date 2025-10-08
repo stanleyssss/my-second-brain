@@ -1,0 +1,97 @@
+/* 
+Neumorphism Style Renovation
+
+This CSS file applies a Neumorphism (soft UI) style to the existing HTML structure.
+The core idea is to use subtle shadows to create a soft, extruded look,
+making elements appear as if they are pushed out from or pressed into the background.
+*/
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #e0e0e0; /* A light grey background is key for Neumorphism */
+    color: #555;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 50px; /* Softer, larger radius is typical for this style */
+    background: #e0e0e0;
+    /* This is the core of the "outset" or "extruded" effect */
+    box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+}
+
+nav {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    padding: 15px 30px;
+    border-radius: 25px;
+    background: #e0e0e0;
+    box-shadow: 10px 10px 30px #bebebe,
+                -10px -10px 30px #ffffff;
+    transition: all 0.2s ease-in-out;
+    font-weight: 600;
+}
+
+/* This creates the "pressed in" effect on hover and active */
+nav a:hover {
+    color: #333;
+    box-shadow: inset 7px 7px 15px #bebebe,
+                inset -7px -7px 15px #ffffff;
+}
+
+nav a:active {
+    color: #000;
+    box-shadow: inset 10px 10px 30px #bebebe,
+                inset -10px -10px 30px #ffffff;
+}
+
+
+h1 {
+    text-align: center;
+    color: #444;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+p {
+    line-height: 1.8;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #e0e0e0;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px #bebebe,
+                -10px -10px 30px #ffffff;
+    transition: transform 0.2s ease-in-out;
+}
+
+li:hover {
+    transform: translateY(-5px); /* A subtle lift effect on hover */
+}

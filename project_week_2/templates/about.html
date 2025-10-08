@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Second Brain</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/goals">My Goals</a>
+    </nav>
+    <div class="container">
+        <h1>About Me</h1>
+        <p>Hello! My name is {{ username }}.</p>
+        <p>I am building this application to organize my thoughts and learnings.</p>
+    </div>
+</body>
+</html>
